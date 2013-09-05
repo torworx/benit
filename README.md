@@ -3,7 +3,7 @@ benit
 
 A simple, easy, javascript benchmarking library.
 
-!!! Example
+## Example
 ```js
 
 var benit = Benit('String Match Benchmark');
@@ -32,7 +32,7 @@ benit
     })
     .run(100000);
 ```
-Output:
+Outputs:
 ```
 ============================================================
 String Match Benchmark
