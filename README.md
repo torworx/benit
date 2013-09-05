@@ -1,11 +1,8 @@
-benit
-=====
-
+# benit
 A simple, easy, javascript benchmarking library.
 
 ## Example
 ```js
-
 var benit = Benit('String Match Benchmark');
 
 // add tests
