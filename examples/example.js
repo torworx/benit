@@ -1,10 +1,4 @@
-benit
-=====
-
-A simple, easy, javascript benchmarking library.
-
-!!! Example
-```js
+var Benit = require('../');
 
 var benit = Benit('String Match Benchmark');
 
@@ -31,15 +25,3 @@ benit
         console.log('------------------------------------------------------------');
     })
     .run(100000);
-```
-Output:
-```
-============================================================
-String Match Benchmark
-------------------------------------------------------------
-RegExp#test x 6667000 ops/sec (100000 ops/ 15 ms)
-String#indexOf x 14290000 ops/sec (100000 ops/ 7 ms)
-String#match x 6250000 ops/sec (100000 ops/ 16 ms)
-------------------------------------------------------------
-```
-
