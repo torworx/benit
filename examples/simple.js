@@ -18,10 +18,11 @@ benit
         console.log(this.name);
         console.log('------------------------------------------------------------');
     })
-    .on('cycle', function (test) {
+    .on('test', function (test) {
         console.log(test.toString());
     })
     .on('complete', function () {
         console.log('------------------------------------------------------------');
     })
-    .run(100000);
+    // 100000 times, 20 cycles
+    .run(100000, 20);

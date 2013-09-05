@@ -20,5 +20,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/taoyuan/benit/issues"
+  },
+  "devDependencies": {
+    "profy": "0.0.5"
   }
 }

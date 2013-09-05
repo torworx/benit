@@ -21,22 +21,23 @@ benit
         console.log(this.name);
         console.log('------------------------------------------------------------');
     })
-    .on('cycle', function (test) {
+    .on('test', function (test) {
         console.log(test.toString());
     })
     .on('complete', function () {
         console.log('------------------------------------------------------------');
     })
-    .run(100000);
+    // 100000 times, 20 cycles
+    .run(100000, 20);
 ```
 Outputs:
 ```
 ============================================================
 String Match Benchmark
 ------------------------------------------------------------
-RegExp#test x 6667000 ops/sec (100000 ops/ 15 ms)
-String#indexOf x 14290000 ops/sec (100000 ops/ 7 ms)
-String#match x 6250000 ops/sec (100000 ops/ 16 ms)
+RegExp#test:   10470000 ops/sec (100000 x 20 ops/ 191 ms)
+String#indexOf:   18520000 ops/sec (100000 x 20 ops/ 108 ms)
+String#match:   9009000 ops/sec (100000 x 20 ops/ 222 ms)
 ------------------------------------------------------------
 ```
 
