@@ -46,7 +46,7 @@ benit
             return stats;
         }, {});
 
-        console.log(test.name + ':   ' + Math.floor(test.count * 1000 / test.stats.mean) + ' ops/sec');
+        console.log(test.name + ': ' + Math.floor(test.count * 1000 / test.stats.mean) + ' ops/sec');
         console.log(test.toString())
     })
     .on('complete', function () {
