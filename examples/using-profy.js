@@ -15,7 +15,7 @@ benit
     })
     .on('start', function () {
         console.log('============================================================');
-        console.log(this.name);
+        console.log(this.title());
         console.log('------------------------------------------------------------');
     })
     .on('test start', function (test) {
